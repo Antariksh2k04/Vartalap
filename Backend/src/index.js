@@ -1,4 +1,5 @@
 import express from "express";
+import bodyParser from "body-parser"
 import authRoutes from "./routes/auth.route.js"
 import messageRoutes from "./routes/message.route.js"
 import dotenv from "dotenv"
@@ -8,6 +9,9 @@ import cors from "cors";
 
 const app=express();
 
+
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 dotenv.config()
 const PORT=process.env.PORT
 

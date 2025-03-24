@@ -16,15 +16,27 @@ const LoginPage = () => {
   console.log("\n\n", useAuthStore(), "\n\n");
 
 
-  const { logIn, isLoggingIn } = useAuthStore();
+  const { login, isLoggingIn } = useAuthStore();
 
+  const validateForm = () => {
+    if(!formData.email.trim()) return toast.error("Haiyah Email is required!");
+
+    if(!/\S+@\S+\.\S+/.test(formData.email)) return toast.error("Haiyah wrong Email format!");
+
+    if(!formData.password.trim()) return toast.error("Haiyah Password is required!");
+
+    if(formData.password.length < 6) return toast.error("Haiyah Password should be atleast 6 characters!");
+
+    return true;
+
+   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const success = validateForm();
     if (success === true)
-      logIn(formData);
+      login(formData);
   };
 
 
@@ -136,7 +148,7 @@ const LoginPage = () => {
 
       {/* right side panel */}
       <AuthImagePattern 
-      title="Join our community"
+      title="Sign In"
       subtitle="Connect with friends, family, colleagues, share moments, work, whatever you want"
       />
     </div>
