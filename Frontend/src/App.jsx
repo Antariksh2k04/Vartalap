@@ -30,7 +30,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div data-theme="light">
 
       <Navbar />
 

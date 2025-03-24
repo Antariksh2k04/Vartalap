@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
+import themes from "daisyui/theme/object";
 
 export default {
   content: [
@@ -8,12 +9,46 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
-        primary:{
-          DEFAULT: '#3b82f6'
-        }
-      }
+      
     },
   },
   plugins: [daisyui],
+  daisyui: {
+    themes: [
+      "light",
+      "dark",
+      "cupcake",
+      "bumblebee",
+      "emerald",
+      "corporate",
+      "synthwave",
+      "retro",
+      "cyberpunk",
+      "valentine",
+      "halloween",
+      "garden",
+      "forest",
+      "aqua",
+      "lofi",
+      "pastel",
+      "fantasy",
+      "wireframe",
+      "black",
+      "luxury",
+      "dracula",
+      "cmyk",
+      "autumn",
+      "business",
+      "acid",
+      "lemonade",
+      "night",
+      "coffee",
+      "winter",
+      "dim",
+      "nord",
+      "sunset",
+    ],
+    defaultTheme: "light",
+    darkTheme: "dark",
+  }
 }
