@@ -31,7 +31,11 @@ const App = () => {
   }
 
   return (
+<<<<<<< HEAD
     <div data-theme={theme}>
+=======
+    <div data-theme="light">
+>>>>>>> bf9ad46341d131047f0cb2ffe7f8d72d7793f957
 
       <Navbar />
 
