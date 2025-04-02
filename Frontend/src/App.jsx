@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from './components/Navbar';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Loader } from "lucide-react";
-import toast,{Toaster} from "react-hot-toast";
+import {Toaster} from "react-hot-toast";
 
 import HomePage from "./pages/HomePage";
 import SignUpPage from "./pages/SignUpPage";
@@ -31,11 +31,7 @@ const App = () => {
   }
 
   return (
-<<<<<<< HEAD
     <div data-theme={theme}>
-=======
-    <div data-theme="light">
->>>>>>> bf9ad46341d131047f0cb2ffe7f8d72d7793f957
 
       <Navbar />
 

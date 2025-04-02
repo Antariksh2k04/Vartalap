@@ -5,13 +5,7 @@ import themes from "daisyui/theme/object";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-<<<<<<< HEAD
     extend: {},
-=======
-    extend: {
-      
-    },
->>>>>>> bf9ad46341d131047f0cb2ffe7f8d72d7793f957
   },
   plugins: [daisyui],
   daisyui: {
@@ -49,12 +43,5 @@ export default {
       "nord",
       "sunset",
     ],
-<<<<<<< HEAD
   },
 };
-=======
-    defaultTheme: "light",
-    darkTheme: "dark",
-  }
-}
->>>>>>> bf9ad46341d131047f0cb2ffe7f8d72d7793f957
